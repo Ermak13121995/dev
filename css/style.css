@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+	color: #333;
+}
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 20px 0;
+	background-color: #fff;
+}
+
+.main {
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.main-contacts {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	text-align: right;
+	margin-left: auto;
+}
+.menu-logo {
+	width: 155px;
+	height: 75px;
+	display: flex;
+}
+.menu-adress {
+	font-size: 13px;
+}
+.menu-phone {
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 9px;
+}
+.menu-button {
+	padding: 18px 30px;
+	font-size: 13px;
+	background-color: #ffd200;
+	border-radius: 10px;
+	font-weight: 700;
+	margin-left: 30px;
+	border: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+	/* Тут стили менять не пришлось, но запрос всё-равно пусть будет */
+} 
+
+@media screen and (max-width: 768px) {
+	.main-contacts {
+		display: none;
+	}
+} 
+
+@media screen and (max-width: 390px) {
+	.main-contacts {
+		display: none;
+	}
+	.menu-button {
+	padding: 15px 22px;
+	font-size: 12px;
+	}
+} 
+
+@media screen and (max-width: 360px) {
+	.main-contacts {
+		display: none;
+	}
+	.menu-logo {
+	width: 100px;
+	height: 75px;
+	display: flex;
+}
+	.menu-button {
+	padding: 15px 20px;
+
+	}
+} 
